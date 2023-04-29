@@ -16,7 +16,7 @@
 			label = "TAP_DANCE_YO";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp T>, <&kp TILDE>;
+			bindings = <&kp T>, <&kp GRAVE>;
 		};
 
 		tdtz: tap_dance_tz {
