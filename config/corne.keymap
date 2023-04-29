@@ -70,9 +70,9 @@
 // |CTRL    |Z       |X       |C       |V       |B       |       |N       |M       |,       |.       |"       |CTRL    |
 //                            |GUI     |ALT     |SPC (M1)|       |ENT (M1)|ALT     |GUI     |
                         bindings = <
-&kp ESC     &kp Q       &kp W       &kp E       &kp R       &tdyo              &kp Y       &kp U       &kp I       &kp O       &tdha       &kp BSPC
-&kp LSHFT   &kp A       &kp S       &kp D       &kp F       &kp G              &kp H       &kp J       &kp K       &kp L       &tdye       &kp RSHFT
-&kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp B              &kp N       &tdtz       &kp COMMA   &kp DOT     &kp DQT     &kp RCTRL
+&kp ESC     &kp Q       &kp W       &kp E       &kp R       &tdyo              &kp Y       &kp U       &kp I        &kp O       &tdha       &kp BSPC
+&kp LSHFT   &kp A       &kp S       &kp D       &kp F       &kp G              &kp H       &kp J       &kp K        &kp L       &tdye       &kp RSHFT
+&kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp B              &kp N       &tdtz       &kp KP_COMMA &kp KP_DOT  &kp DQT     &kp RCTRL
                                     &kp LGUI    &kp LALT    &lt 1 SPACE        &lt 1 RET   &kp RALT    &kp RGUI
                         >;
                 };
@@ -85,7 +85,7 @@
                         bindings = <
 &kp TAB         &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                 &kp LBKT        &kp LPAR        &kp UP          &kp LBRC        &kp LT          &kp DEL
 &trans          &kp N6          &kp N7          &kp N8          &lt 2 N9        &kp N0                 &kp COLON       &lt 2 LEFT      &kp DOWN        &kp RIGHT       &kp SEMI        &trans
-&trans          &kp FSLH        &kp KP_MULTIPLY &kp MINUS       &kp PLUS        &kp DOT                &kp UNDER       &kp EQUAL       &kp COMMA       &kp DOT         &kp DQT         &trans
+&trans          &kp KP_SLASH    &kp KP_MULTIPLY &kp MINUS       &kp PLUS        &kp KP_DOT             &kp UNDER       &kp EQUAL       &kp KP_COMMA    &kp KP_DOT         &kp DQT         &trans
                                                 &trans          &trans          &lt 3 SPACE            &lt 3 RET       &trans          &trans
                         >;
                 };
