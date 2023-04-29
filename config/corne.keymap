@@ -10,15 +10,47 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-        behaviors {
-                td0: tap_dance_0 {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TAP_DANCE_0";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp T>, <&kp GRAVE>;
-                };
-        };
+	behaviors {
+		tdyo: tap_dance_yo {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_YO";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp T>, <&kp GRAVE>;
+		};
+
+		tdtz: tap_dance_tz {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_TZ";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp M>, <&kp RBRC>;
+		};
+
+		tdye: tap_dance_ye {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_YE";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp SEMI>, <&kp DQT>;
+		};
+
+		tdha: tap_dance_ha {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_HA";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp P>, <&kp LBRC>;
+		};
+
+		tdcl: tap_dance_cl {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_CapsLock";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp LSHFT>, <&kp CAPS>;
+		};
+	};
         
         keymap {
                 compatible = "zmk,keymap";
