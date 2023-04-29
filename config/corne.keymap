@@ -16,7 +16,7 @@
 			label = "TAP_DANCE_YO";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp T>, <&kp GRAVE>;
+			bindings = <&kp T>, <&kp TILDE>;
 		};
 
 		tdtz: tap_dance_tz {
@@ -24,7 +24,7 @@
 			label = "TAP_DANCE_TZ";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp M>, <&kp RBRC>;
+			bindings = <&kp M>, <&kp RBKT>;
 		};
 
 		tdye: tap_dance_ye {
@@ -32,7 +32,7 @@
 			label = "TAP_DANCE_YE";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp SEMI>, <&kp DQT>;
+			bindings = <&kp SEMI>, <&kp SQT>;
 		};
 
 		tdha: tap_dance_ha {
@@ -40,7 +40,7 @@
 			label = "TAP_DANCE_HA";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp P>, <&kp LBRC>;
+			bindings = <&kp P>, <&kp LBKT>;
 		};
 
 		tdcll: tap_dance_cll {
