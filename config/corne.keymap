@@ -85,7 +85,7 @@
                         bindings = <
 &kp TAB         &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                 &kp LBKT        &kp LPAR        &kp UP          &kp LBRC        &kp LT          &kp DEL
 &trans          &kp N6          &kp N7          &kp N8          &lt 2 N9        &kp N0                 &kp COLON       &lt 2 LEFT      &kp DOWN        &kp RIGHT       &kp SEMI        &trans
-&trans          &kp FSLH        &kp STAR        &kp MINUS       &kp PLUS        &kp DOT                &kp UNDER       &kp EQUAL       &kp COMMA       &kp DOT         &kp DQT         &trans
+&trans          &kp FSLH        &kp STAR        &kp MINUS       &kp PLUS        &kp DOT                &kp UNDER       &kp EQUAL       &kp COMMA       &kp DOT         &kp FSLH        &trans
                                                 &trans          &trans          &lt 3 SPACE            &lt 3 RET       &trans          &trans
                         >;
                 };
@@ -98,7 +98,7 @@
                         bindings = <
 &trans     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5            &kp RBKT   &kp RPAR   &kp AMPS   &kp RBRC   &kp GT     &trans
 &trans     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10           &tdtg      &tdpb      &kp QMARK  &kp EXCL   &kp PRCNT  &trans
-&trans     &kp F11    &kp F12    &kp F13    &kp F14    &kp F15           &kp HASH   &kp AT     &kp DLLR   &kp CARET  &kp SQT    &trans
+&trans     &kp F11    &kp F12    &kp F13    &kp F14    &kp F15           &kp HASH   &kp AT     &kp DLLR   &kp CARET  &kp QMARK  &trans
                                  &trans     &trans     &lt 3 SPACE       &lt 3 RET  &trans     &trans
                         >;
                 };
