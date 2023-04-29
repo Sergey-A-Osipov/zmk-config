@@ -43,6 +43,21 @@
 			bindings = <&kp P>, <&kp LBKT>;
 		};
 
+		tdtg: tap_dance_tg {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_TILDE_GRAVE";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp TILDE>, <&kp GRAVE>;
+		};
+
+		tdpb: tap_dance_pb {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_PIPE_BSLH";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp PIPE>, <&kp BSLH>;
+		};
 	};
         
         keymap {
@@ -76,27 +91,27 @@
                 };
                 n2_layer {
 // -----------------------------------------------------------------------------------------
-// |        |F1      |F2      |F3      |F4      |F5      |       |]       |)       |PgUp    |}       |>       |        |
-// |        |F6      |F7      |F8      |F9      |F10     |       |&       |Home    |PgDn    |End     ||       |        |
-// |        |F11     |F12     |F13     |F14     |F15     |       |@       |#       |?       |!       |'       |        |
+// |        |F1      |F2      |F3      |F4      |F5      |       |]       |)       |&       |}       |>       |        |
+// |        |F6      |F7      |F8      |F9      |F10     |       |~ [`]   || [\]   |?       |!       |%       |        |
+// |        |F11     |F12     |F13     |F14     |F15     |       |#       |@       |$       |^       |'       |        |
 //                            |        |        |SPC (M3)|       |ENT (M3)|        |        |
                         bindings = <
-&trans      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5             &kp RBKT    &kp RPAR    &kp PG_UP   &kp RBRC    &kp GT      &trans
-&trans      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10            &kp AMPS    &kp HOME    &kp PG_DN   &kp END     &kp PIPE    &trans
-&trans      &kp F11     &kp F12     &kp F13     &kp F14     &kp F15            &kp AT      &kp HASH    &kp QMARK   &kp EXCL    &kp SQT     &trans
-                                    &trans      &trans      &lt 3 SPACE        &lt 3 RET   &trans      &trans
+&trans     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5            &kp RBKT   &kp RPAR   &kp AMPS   &kp RBRC   &kp GT     &trans
+&trans     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10           &tdtg      &tdpb      &kp QMARK  &kp EXCL   &kp PRCNT  &trans
+&trans     &kp F11    &kp F12    &kp F13    &kp F14    &kp F15           &kp HASH   &kp AT     &kp DLLR   &kp CARET  &kp SQT    &trans
+                                 &trans     &trans     &lt 3 SPACE       &lt 3 RET  &trans     &trans
                         >;
                 };
                 n3_layer {
 // -----------------------------------------------------------------------------------------
-// |        |BTCLR   |BT1     |BT2     |BT3     |BT4     |       |Insert  |PrtScr  |Pause   |Caps    |ScrLock |        |
-// |        |F16     |F17     |VolDwn  |VolUp   |Mute    |       |`       |$       |\       |^       |%       |        |
-// |        |F18     |OUT_BLE |SkpBck  |SkpFrw  |PlayPaus|       |~       |Ё       |Э       |Х       |Ъ       |        |
+// |        |F16     |F17     |F18     |F19     |OUT_TOG |       |VolDwn  |VolUp   |PgUp    |SkpBck  |SkpFrw  |        |
+// |        |BTCLR   |BT1     |BT2     |BT3     |BT4     |       |Mute    |Home    |PgDn    |End     |PlayPaus|        |
+// |        |LayCLR  |LayX1   |LayX2   |LayX3   |LayX4   |       |Insert  |PrtScr  |Pause   |Caps    |ScrLock |        |
 //                            |        |        |        |       |        |        |        |
                         bindings = <
-&trans          &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3           &kp INS         &kp PSCRN       &kp PAUSE_BREAK &kp CAPS        &kp SLCK        &trans
-&trans          &kp F16         &kp F17         &kp C_VOL_DN    &kp C_VOL_UP    &kp C_MUTE             &kp GRAVE       &kp DLLR        &kp BSLH        &kp CARET       &kp PRCNT       &trans
-&trans          &kp F18         &out OUT_BLE    &kp C_PREV      &kp C_NEXT      &kp C_PP               &kp TILDE       &kp GRAVE       &kp SQT         &kp LBKT        &kp RBKT        &trans
+&trans          &kp F16         &kp F17         &kp F18         &kp F19         &out OUT_TOG           &kp C_VOL_DN    &kp C_VOL_UP    &kp PG_UP       &kp C_PREV      &kp C_NEXT      &trans
+&trans          &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3           &kp C_MUTE      &kp HOME        &kp PG_DN       &kp END         &kp C_PP        &trans
+&trans          &none           &none           &none           &none           &none                  &kp INS         &kp PSCRN       &kp PAUSE_BREAK &kp CAPS        &kp SLCK        &trans
                                                 &trans          &trans          &trans                 &trans          &trans          &trans
                         >;
                 };
