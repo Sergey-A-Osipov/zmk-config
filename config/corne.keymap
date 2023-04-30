@@ -9,6 +9,17 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define DEFAULT    0
+/*
+#define DEFMOD_CS1 1
+#define DEFMOD_CS1 2
+*/
+#define NUMB_L     1
+#define NUMB_R     2
+#define SYMBOL     3
+#define COMMAND    4
+#define SETTINGS   5
+
 / {
 	behaviors {
 		tdyo: tap_dance_yo {
@@ -57,7 +68,7 @@
 &kp ESC     &kp Q       &kp W       &kp E       &kp R       &tdyo                    &kp Y           &kp U       &kp I        &kp O       &tdha       &kp BSPC
 &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &kp G                    &kp H           &kp J       &kp K        &kp L       &tdye       &kp RSHFT
 &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp B                    &kp N           &tdtz       &kp COMMA    &kp DOT     &kp FSLH    &kp RCTRL
-                                    &kp LGUI    &kp LALT    &lt 1 SPACE              &lt 2 RET       &kp RALT    &kp RGUI
+                                    &kp LGUI    &kp LALT    &lt NUMB_L SPACE         &lt NUMB_R RET  &kp RALT    &kp RGUI
                         >;
                 };
                 numb_l_layer {
@@ -65,12 +76,12 @@
 // |TAB     |1       |2       |3       |4       |5       |       |[       |]       |UP      |(       |)       |Del     |
 // |        |6       |7       |8       |9 (SM)  |0       |       |=       |LFT     |DWN     |RGT     |:       |        |
 // |        |/       |*       |-       |+       |.       |       |{       |}       |<       |>       |?       |        |
-//                            |        |        |        |       |ENT (CM)|        |        |
+//                            |        |        |SPC (CM)|       |ENT (CM)|        |        |
                         bindings = <
 &kp TAB   &kp N1     &kp N2     &kp N3      &kp N4          &kp N5                 &kp LBKT         &kp RBKT          &kp UP      &kp LPAR    &kp RPAR   &kp DEL
-&trans    &kp N6     &kp N7     &kp N8      &lt 3 N9        &kp N0                 &kp EQUAL        &lt LEFT          &kp DOWN    &kp RIGHT   &kp COLON  &trans
+&trans    &kp N6     &kp N7     &kp N8      &lt SYMBOL N9   &kp N0                 &kp EQUAL        &kp LEFT          &kp DOWN    &kp RIGHT   &kp COLON  &trans
 &trans    &kp FSLH   &kp STAR   &kp MINUS   &kp PLUS        &kp DOT                &kp LBRC         &kp RBRC          &kp LT      &kp GT      &kp QMARK  &trans
-                                &trans      &trans          &trans                 &lt 4 RET        &trans            &trans
+                                &trans      &trans          &trans                 &lt COMMAND RET  &trans            &trans
                         >;
                 };
                 numb_r_layer {
@@ -78,12 +89,12 @@
 // |TAB     |1       |2       |3       |4       |5       |       |[       |]       |UP      |(       |)       |Del     |
 // |        |6       |7       |8       |9       |0       |       |=       |LFT (SM)|DWN     |RGT     |:       |        |
 // |        |/       |*       |-       |+       |.       |       |{       |}       |<       |>       |?       |        |
-//                            |        |        |SPC (CM)|       |        |        |        |
+//                            |        |        |SPC (CM)|       |ENT (CM)|        |        |
                         bindings = <
 &kp TAB   &kp N1     &kp N2     &kp N3      &kp N4          &kp N5                 &kp LBKT         &kp RBKT          &kp UP      &kp LPAR    &kp RPAR   &kp DEL
-&trans    &kp N6     &kp N7     &kp N8      &lt N9          &kp N0                 &kp EQUAL        &lt 3 LEFT        &kp DOWN    &kp RIGHT   &kp COLON  &trans
+&trans    &kp N6     &kp N7     &kp N8      &kp N9          &kp N0                 &kp EQUAL        &lt SYMBOL LEFT   &kp DOWN    &kp RIGHT   &kp COLON  &trans
 &trans    &kp FSLH   &kp STAR   &kp MINUS   &kp PLUS        &kp DOT                &kp LBRC         &kp RBRC          &kp LT      &kp GT      &kp QMARK  &trans
-                                &trans      &trans          &lt 4 SPACE            &trans           &trans            &trans
+                                &trans      &trans          &lt COMMAND SPACE      &trans           &trans            &trans
                         >;
                 };
                 symbol_layer {
@@ -96,7 +107,7 @@
 &trans   &kp F1    &kp F2    &kp F3    &kp F4    &kp F5                 &kp GRAVE         &kp TILDE  &kp AMPS    &kp CARET   &kp BSLH    &trans
 &trans   &kp F6    &kp F7    &kp F8    &kp F9    &kp F10                &kp DQT           &kp HASH   &kp DLLR    &kp UNDER   &kp PIPE    &trans
 &trans   &kp F11   &kp F12   &kp F13   &kp F14   &kp F15                &kp SQT           &kp AT     &kp PRCNT   &none       &kp EXCL    &trans
-                             &trans    &trans    &lt 4 SPACE            &lt 4 RET         &trans     &trans
+                             &trans    &trans    &lt COMMAND SPACE      &lt COMMAND RET   &trans     &trans
                         >;
                 };
                 command_layer {
