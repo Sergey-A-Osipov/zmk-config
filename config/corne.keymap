@@ -74,7 +74,7 @@
    &kp LCTRL  &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N           &tdtz           &kp COMMA       &kp DOT         &kp FSLH        &kp RCTRL
 //╰──────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴──────────╯
 //                                           │  (GUI)        │  TAB (ALT)    │  SPC (S)      │   │  ENT (N)      │  (ALT)        │  (GUI)        │
-                                              &kp LGUI        &kp LALT        &lt SYM SPACE       &lt NUM RET     &kp RALT        &kp RGUI
+                                              &kp LGUI        &ht_hp LALT TAB &lt SYM SPACE       &lt NUM RET     &kp RALT        &kp RGUI
 //                                           ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
