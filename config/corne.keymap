@@ -131,8 +131,8 @@
                 symbol_layer {
                         bindings = <
 //╭──────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬──────────╮
-//│ESC (MO S)│  !            │  @            │  #            │  $            │  %            │   │  ^            │  &            │  *            │  `            │  ~            │          │
-   &lt SET ESC &kp EXCL       &kp AT          &kp HASH        &kp DLLR        &kp PRCNT           &kp CARET       &kp AMPS        &kp STAR        &kp GRAVE       &kp TILDE        &trans
+//│ESC (MO S)│  !            │  @            │  #            │  $            │  %            │   │  ^            │  &            │  *            │  `            │  ~            │  DEL     │
+   &lt SET ESC &kp EXCL       &kp AT          &kp HASH        &kp DLLR        &kp PRCNT           &kp CARET       &kp AMPS        &kp STAR        &kp GRAVE       &kp TILDE        &kp DEL
 //├──────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼──────────┤
 //│          │  <            │  [            │  {            │  (            │               │   │  '            │  -            │  =            │  \            │  :            │          │
    &trans     &kp LT          &kp LBKT        &kp LBRC        &kp LPAR        &none               &kp SQT         &kp MINUS       &kp EQUAL       &kp BSLH        &kp COLON        &trans
