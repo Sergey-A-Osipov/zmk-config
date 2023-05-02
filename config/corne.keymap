@@ -84,7 +84,7 @@
     &none    &ht LCTRL Z   &kp X        &kp C       &kp V       &kp B             &kp N          &tdtz     &kp COMMA  &kp DOT     &ht RCTRL FSLH &none
 //╰─────────┴────────────┴────────────┼───────────┼───────────┼─────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                                    │ ESC       │ TAB       │SPACE(MO SYM)│   │ENTER (MO NUM)│ BKSP     │ DEL      │
-                                        &kp ESC     &kp TAB    &lt SYM SPACE     &lt NUM RET     &kp BSPC  &kp DEL
+                                        &kp ESC     &kp TAB    &ht SYM SPACE     &lt NUM RET     &kp BSPC  &kp DEL
 //                                    ╰───────────┴───────────┴─────────────╯   ╰──────────────┴──────────┴──────────╯
                         >;
                 };
