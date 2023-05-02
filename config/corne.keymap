@@ -93,13 +93,13 @@
                         bindings = <
 //╭─────────┬─────────┬────────┬────────────┬───────────────┬───────────────╮   ╭──────────────┬──────────┬──────────┬───────────┬─────────────┬───────╮
 //│         │ ESC     │        │            │               │               │   │              │          │          │           │             │
-    &none     &kp ESC   &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
+    &none     &kp ESC   &kp Q    &kp W        &kp E           &kp R               &trans         &trans     &trans     &trans      &trans        &none
 //├─────────┼─────────┼────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
 //│         │ SHIFT   │        │            │               │               │   │              │          │          │           │             │
-    &none    &kp LSHFT  &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
+    &none    &kp LSHFT  &kp A    &kp S        &kp D           &kp G               &trans         &trans     &trans     &trans      &trans        &none
 //├─────────┼─────────┼────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
 //│         │ CTRL    │        │            │               │               │   │              │          │          │           │             │
-    &none    &kp LCTRL  &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
+    &none    &kp LCTRL  &kp Z    &kp X        &kp V           &kp B               &trans         &trans     &trans     &trans      &trans        &none
 //╰─────────┴─────────┴────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                             │ K          │ TAB (MO CS2)  │ SPACE         │   │              │          │          │
                                  &kp K       &lt DEF_CS2 TAB  &kp SPACE           &trans         &trans     &trans
