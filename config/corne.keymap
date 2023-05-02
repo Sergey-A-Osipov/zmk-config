@@ -101,7 +101,7 @@
     &none     &trans    &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
 //╰─────────┴─────────┴────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                             │ K          │ TAB (MO CS2)  │ SPACE         │   │              │          │          │
-                                 &kp K       &lt DEF_CS2 TAB  &kp SPACE           &trans         &trans     &trans
+                                 &kp K       &ht DEF_CS2 TAB  &kp SPACE           &trans         &trans     &trans
 //                             ╰────────────┴───────────────┴───────────────╯   ╰──────────────┴──────────┴──────────╯
                         >;
                 };
@@ -115,7 +115,7 @@
     &none     &kp F6    &kp F7    &kp F8      &kp F9          &kp F10             &trans         &trans     &trans     &trans      &trans        &none  
 //├─────────┼─────────┼─────────┼───────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
 //│         │ F11     │ F12     │ F13       │ F14           │ F15 (MO SET)  │   │              │          │          │           │             │
-    &none     &kp F11   &kp F12   &kp F13     &kp F14         &lt SET F15         &trans         &trans     &trans     &trans      &trans        &none
+    &none     &kp F11   &kp F12   &kp F13     &kp F14         &ht SET F15         &trans         &trans     &trans     &trans      &trans        &none
 //╰─────────┴─────────┴─────────┼───────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                              │ F18       │               │ F18           │   │              │          │          │
                                   &kp F18     &trans          &kp F18             &trans         &trans     &trans
