@@ -59,16 +59,6 @@
 			bindings = <&kp>, <&kp>;
 		};
 
-		htl: hold_tap_mo_kp {
-			label = "hold_tap";
-			compatible = "zmk,behavior-hold-tap";
-			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			tapping-term-ms = <220>;
-			quick-tap-ms = <150>;
-			global-quick-tap;
-			bindings = <&mo>, <&kp>;
-		};
 	};
 
 	conditional_layers {
@@ -95,7 +85,7 @@
     &none    &ht LCTRL Z   &kp X        &kp C       &kp V       &kp B             &kp N          &tdtz     &kp COMMA  &kp DOT     &ht RCTRL FSLH &none
 //╰─────────┴────────────┴────────────┼───────────┼───────────┼─────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                                    │ ESC       │ TAB       │SPACE(MO SYM)│   │ENTER (MO NUM)│ BKSP     │ DEL      │
-                                        &kp ESC     &kp TAB    &htl SYM SPACE    &htl NUM RET    &kp BSPC  &kp DEL
+                                        &kp ESC     &kp TAB    &lt SYM SPACE     &lt NUM RET     &kp BSPC   &kp DEL
 //                                    ╰───────────┴───────────┴─────────────╯   ╰──────────────┴──────────┴──────────╯
                         >;
                 };
@@ -112,7 +102,7 @@
     &none     &trans    &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
 //╰─────────┴─────────┴────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                             │ K          │ TAB (MO CS2)  │ SPACE         │   │              │          │          │
-                                 &kp K       &htl DEF_CS2 TAB &kp SPACE           &trans         &trans     &trans
+                                 &kp K       &lt DEF_CS2 TAB  &kp SPACE           &trans         &trans     &trans
 //                             ╰────────────┴───────────────┴───────────────╯   ╰──────────────┴──────────┴──────────╯
                         >;
                 };
@@ -126,7 +116,7 @@
     &none     &kp F6    &kp F7    &kp F8      &kp F9          &kp F10             &trans         &trans     &trans     &trans      &trans        &none  
 //├─────────┼─────────┼─────────┼───────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
 //│         │ F11     │ F12     │ F13       │ F14           │ F15 (MO SET)  │   │              │          │          │           │             │
-    &none     &kp F11   &kp F12   &kp F13     &kp F14         &htl SET F15        &trans         &trans     &trans     &trans      &trans        &none
+    &none     &kp F11   &kp F12   &kp F13     &kp F14         &lt SET F15         &trans         &trans     &trans     &trans      &trans        &none
 //╰─────────┴─────────┴─────────┼───────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                              │ F18       │               │ F18           │   │              │          │          │
                                   &kp F18     &trans          &kp F18             &trans         &trans     &trans
