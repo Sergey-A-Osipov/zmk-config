@@ -92,14 +92,14 @@
                 default_cs1_layer {
                         bindings = <
 //╭─────────┬─────────┬────────┬────────────┬───────────────┬───────────────╮   ╭──────────────┬──────────┬──────────┬───────────┬─────────────┬───────╮
-//│         │         │        │            │               │               │   │              │          │          │           │             │
-    &none     &trans    &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
+//│         │ ESC     │        │            │               │               │   │              │          │          │           │             │
+    &none     &kp ESC   &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
 //├─────────┼─────────┼────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
-//│          │        │        │            │               │               │   │              │          │          │           │             │
-    &none     &trans    &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
+//│         │ SHIFT   │        │            │               │               │   │              │          │          │           │             │
+    &none    &kp LSHFT  &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
 //├─────────┼─────────┼────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
-//│         │         │        │            │               │               │   │              │          │          │           │             │
-    &none     &trans    &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
+//│         │ CTRL    │        │            │               │               │   │              │          │          │           │             │
+    &none    &kp LCTRL  &trans   &trans       &trans          &trans              &trans         &trans     &trans     &trans      &trans        &none
 //╰─────────┴─────────┴────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                             │ K          │ TAB (MO CS2)  │ SPACE         │   │              │          │          │
                                  &kp K       &lt DEF_CS2 TAB  &kp SPACE           &trans         &trans     &trans
