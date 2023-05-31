@@ -37,7 +37,7 @@
 			label = "TAP_DANCE_YE";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp SEMI>, <&kp SQT>;
+			bindings = <&ht RCTRL SEMI>, <&kp SQT>;
 		};
 
 		tdha: tap_dance_ha {
@@ -78,11 +78,11 @@
 //│         │ Q          │ W          │ E         │ R         │ T [Ё]       │   │ Y            │ U        │ I        │ O         │ P [Х]       │       │
     &none     &kp Q        &kp W        &kp E       &kp R       &tdyo             &kp Y          &kp U      &kp I      &kp O       &tdha         &none
 //├─────────┼────────────┼────────────┼───────────┼───────────┼─────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
-//│         │ A          │ S(SHIFT)   │ D(GUI)    │ F(ALT)    │ G           │   │ H            │ J(ALT)   │ K(GUI)   │ L(SHIFT)  │ ; [Э]       │       │
-    &none     &ht LCTRL A  &ht LSHFT S  &ht LGUI D  &ht LALT F  &kp G             &kp H         &ht RALT J &ht RGUI K &ht RSHFT L  &ht RCTRL &tdye &none
+//│         │ A(CTRL)    │ S(SHIFT)   │ D(GUI)    │ F(ALT)    │ G           │   │ H            │ J(ALT)   │ K(GUI)   │ L(SHIFT)  │ ; [Э](CTRL) │       │
+    &none     &ht LCTRL A  &ht LSHFT S  &ht LGUI D  &ht LALT F  &kp G             &kp H         &ht RALT J &ht RGUI K &ht RSHFT L  &tdye         &none
 //├─────────┼────────────┼────────────┼───────────┼───────────┼─────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
-//│         │ Z(CTRL)    │ X          │ C         │ V         │ B           │   │ N            │ M [Ъ]    │ ,        │ .         │ /(CTRL)     │       │
-    &none    &ht LCTRL Z   &kp X        &kp C       &kp V       &kp B             &kp N          &tdtz     &kp COMMA  &kp DOT     &ht RCTRL FSLH &none
+//│         │ Z          │ X          │ C         │ V         │ B           │   │ N            │ M [Ъ]    │ ,        │ .         │ /(CTRL)     │       │
+    &none     &kp Z        &kp X        &kp C       &kp V       &kp B             &kp N          &tdtz      &kp COMMA  &kp DOT     &kp FSLH      &none
 //╰─────────┴────────────┴────────────┼───────────┼───────────┼─────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                                    │ ESC       │ TAB       │SPACE(MO SYM)│   │ENTER (MO NUM)│ BKSP     │ DEL      │
                                         &kp ESC     &kp TAB    &lt SYM SPACE     &lt NUM RET     &kp BSPC   &kp DEL
