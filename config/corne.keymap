@@ -48,22 +48,6 @@
 			bindings = <&kp P>, <&kp LBKT>;
 		};
 
-		tdsp: tap_dance_sp {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAP_DANCE_SP";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&lt SYM SPACE>, <&kp SPACE>;
-		};
-
-		tden: tap_dance_en {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAP_DANCE_EN";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&lt NUM RET>, <&kp RET>;
-		};
-
 		ht: hold_tap_kp_kp {
 			label = "hold_tap";
 			compatible = "zmk,behavior-hold-tap";
@@ -101,7 +85,7 @@
     &none     &kp Z        &kp X        &kp C       &kp V       &kp B             &kp N          &tdtz      &kp COMMA  &kp DOT     &kp FSLH      &none
 //╰─────────┴────────────┴────────────┼───────────┼───────────┼─────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                                    │ ESC       │ TAB       │SPACE(MO SYM)│   │ENTER (MO NUM)│ BKSP     │ DEL      │
-                                        &kp ESC     &kp TAB    &tdsp             &tden           &kp BSPC   &kp DEL
+                                        &kp ESC     &kp TAB    &lt SYM SPACE     &lt NUM RET     &kp BSPC   &kp DEL
 //                                    ╰───────────┴───────────┴─────────────╯   ╰──────────────┴──────────┴──────────╯
                         >;
                 };
