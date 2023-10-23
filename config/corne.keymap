@@ -92,14 +92,14 @@
                 default_cs1_layer {
                         bindings = <
 //╭─────────┬─────────┬────────┬────────────┬───────────────┬───────────────╮   ╭──────────────┬──────────┬──────────┬───────────┬─────────────┬───────╮
-//│         │ ESC     │        │            │               │               │   │              │          │          │           │             │
-    &none     &kp ESC   &kp Q    &kp W        &kp E           &kp R               &trans         &trans     &trans     &trans      &trans        &none
+//│         │ ESC     │ 1      │ W          │ 2             │ R             │   │              │          │          │           │             │
+    &none     &kp ESC   &kp N1   &kp W        &kp N2          &kp R               &trans         &trans     &trans     &trans      &trans        &none
 //├─────────┼─────────┼────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
-//│         │ SHIFT   │        │            │               │               │   │              │          │          │           │             │
-    &none    &kp LSHFT  &kp A    &kp S        &kp D           &kp G               &trans         &trans     &trans     &trans      &trans        &none
+//│         │ SHIFT   │ A      │ S          │ D             │ E             │   │              │          │          │           │             │
+    &none    &kp LSHFT  &kp A    &kp S        &kp D           &kp E               &trans         &trans     &trans     &trans      &trans        &none
 //├─────────┼─────────┼────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
-//│         │ CTRL    │        │            │               │               │   │              │          │          │           │             │
-    &none    &kp LCTRL  &kp Z    &kp X        &kp V           &kp B               &trans         &trans     &trans     &trans      &trans        &none
+//│         │ CTRL    │ 3      │ 4          │ 5             │ B             │   │              │          │          │           │             │
+    &none    &kp LCTRL  &kp N3   &kp N4       &kp N5          &kp B               &trans         &trans     &trans     &trans      &trans        &none
 //╰─────────┴─────────┴────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                             │ K          │ TAB (MO CS2)  │ SPACE         │   │              │          │          │
                                  &kp K       &lt DEF_CS2 TAB  &kp SPACE           &trans         &trans     &trans
@@ -109,17 +109,17 @@
                 default_cs2_layer {
                         bindings = <
 //╭─────────┬─────────┬─────────┬───────────┬───────────────┬───────────────╮   ╭──────────────┬──────────┬──────────┬───────────┬─────────────┬───────╮
-//│         │ F1      │ F2      │ F3        │ F4            │ F5            │   │              │          │          │           │             │
-    &none     &kp F1    &kp F2    &kp F3      &kp F4          &kp F5              &trans         &trans     &trans     &trans      &trans        &none
+//│         │ 6       │ 7       │           │ 8             │ 0             │   │              │          │          │           │             │
+    &none     &kp N6    &kp N7    &trans      &kp N8          &kp N0              &trans         &trans     &trans     &trans      &trans        &none
 //├─────────┼─────────┼─────────┼───────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
-//│         │ F6      │ F7      │ F8        │ F9            │ F10           │   │              │          │          │           │             │
-    &none     &kp F6    &kp F7    &kp F8      &kp F9          &kp F10             &trans         &trans     &trans     &trans      &trans        &none  
+//│         │         │         │           │               │ G             │   │              │          │          │           │             │
+    &none     &trans    &trans    &trans      &trans          &kp G               &trans         &trans     &trans     &trans      &trans        &none  
 //├─────────┼─────────┼─────────┼───────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
-//│         │ F11     │ F12     │ F13       │ F14           │ F15 (MO SET)  │   │              │          │          │           │             │
-    &none     &kp F11   &kp F12   &kp F13     &kp F14         &lt SET F15         &trans         &trans     &trans     &trans      &trans        &none
+//│         │         │ F1      │ F2        │ F3            │ F4  (MO SET)  │   │              │          │          │           │             │
+    &none     &trans    &kp F1    &kp F2      &kp F3          &lt SET F4          &trans         &trans     &trans     &trans      &trans        &none
 //╰─────────┴─────────┴─────────┼───────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
-//                              │ F18       │               │ F18           │   │              │          │          │
-                                  &kp F18     &trans          &kp F18             &trans         &trans     &trans
+//                              │ F5        │               │ TAB           │   │              │          │          │
+                                  &kp F5      &trans          &kp TAB             &trans         &trans     &trans
 //                              ╰───────────┴───────────────┴───────────────╯   ╰──────────────┴──────────┴──────────╯
                         >;
                 };
