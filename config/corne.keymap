@@ -76,13 +76,13 @@
                         bindings = <
 //╭─────────┬────────────┬────────────┬───────────┬───────────┬─────────────╮   ╭──────────────┬──────────┬──────────┬───────────┬─────────────┬───────╮
 //│         │ Q          │ W          │ E         │ R         │ T [Ё]       │   │ Y            │ U        │ I        │ O         │ P [Х]       │       │
-    &kp N1    &kp Q        &kp W        &kp E       &kp R       &tdyo             &kp Y          &kp U      &kp I      &kp O       &tdha         &kp N4
+    &none     &kp Q        &kp W        &kp E       &kp R       &tdyo             &kp Y          &kp U      &kp I      &kp O       &tdha         &none
 //├─────────┼────────────┼────────────┼───────────┼───────────┼─────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
 //│         │ A(CTRL)    │ S(SHIFT)   │ D(GUI)    │ F(ALT)    │ G           │   │ H            │ J(ALT)   │ K(GUI)   │ L(SHIFT)  │ ; [Э](CTRL) │       │
-    &kp N2    &ht LCTRL A  &ht LSHFT S  &ht LGUI D  &ht LALT F  &kp G             &kp H         &ht RALT J &ht RGUI K &ht RSHFT L  &tdye         &kp N5
+    &none     &ht LCTRL A  &ht LSHFT S  &ht LGUI D  &ht LALT F  &kp G             &kp H         &ht RALT J &ht RGUI K &ht RSHFT L  &tdye         &none
 //├─────────┼────────────┼────────────┼───────────┼───────────┼─────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
 //│         │ Z          │ X          │ C         │ V         │ B           │   │ N            │ M [Ъ]    │ ,        │ .         │ /(CTRL)     │       │
-    &kp N3    &kp Z        &kp X        &kp C       &kp V       &kp B             &kp N          &tdtz      &kp COMMA  &kp DOT     &kp FSLH      &kp N6
+    &none     &kp Z        &kp X        &kp C       &kp V       &kp B             &kp N          &tdtz      &kp COMMA  &kp DOT     &kp FSLH      &none
 //╰─────────┴────────────┴────────────┼───────────┼───────────┼─────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                                    │ ESC       │ TAB       │SPACE(MO SYM)│   │ENTER (MO NUM)│ BKSP     │ DEL      │
                                         &kp ESC     &kp TAB    &lt SYM SPACE     &lt NUM RET     &kp BSPC   &kp DEL
@@ -93,13 +93,13 @@
                         bindings = <
 //╭─────────┬─────────┬────────┬────────────┬───────────────┬───────────────╮   ╭──────────────┬──────────┬──────────┬───────────┬─────────────┬───────╮
 //│         │ ESC     │ 1      │ W          │ 2             │ R             │   │              │          │          │           │             │
-    &kp N1    &kp ESC   &kp N1   &kp W        &kp N2          &kp R               &trans         &trans     &trans     &trans      &trans        &kp N4
+    &none     &kp ESC   &kp N1   &kp W        &kp N2          &kp R               &trans         &trans     &trans     &trans      &trans        &none
 //├─────────┼─────────┼────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
 //│         │ SHIFT   │ A      │ S          │ D             │ E             │   │              │          │          │           │             │
-    &kp N2   &kp LSHFT  &kp A    &kp S        &kp D           &kp E               &trans         &trans     &trans     &trans      &trans        &kp N5
+    &none    &kp LSHFT  &kp A    &kp S        &kp D           &kp E               &trans         &trans     &trans     &trans      &trans        &none
 //├─────────┼─────────┼────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┼─────────────┼───────┤
 //│         │ CTRL    │ 3      │ 4          │ 5             │ B             │   │              │          │          │           │             │
-    &kp N3   &kp LCTRL  &kp N3   &kp N4       &kp N5          &kp B               &trans         &trans     &trans     &trans      &trans        &kp N6
+    &none    &kp LCTRL  &kp N3   &kp N4       &kp N5          &kp B               &trans         &trans     &trans     &trans      &trans        &none
 //╰─────────┴─────────┴────────┼────────────┼───────────────┼───────────────┤   ├──────────────┼──────────┼──────────┼───────────┴─────────────┴───────╯
 //                             │ K          │ TAB (MO CS2)  │ SPACE         │   │              │          │          │
                                  &kp K       &lt DEF_CS2 TAB  &kp SPACE           &trans         &trans     &trans
