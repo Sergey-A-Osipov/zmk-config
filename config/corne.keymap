@@ -20,15 +20,26 @@
 #define U_MOUSE_SCROLL_DELAY 0
 
 #define U_MOUSE_MOVE_MAX 3000
+#define U_MOUSE_MOVE_DELAY 0
+#define U_MOUSE_MOVE_EXPONENT 1
+#define U_MOUSE_MOVE_TIME 1500
 #define MOVE_UP 		MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN 		MOVE_VERT(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT 		MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT 		MOVE_HOR(U_MOUSE_MOVE_MAX)
 
+&mmv {
+    delay-ms = <U_MOUSE_MOVE_DELAY>;
+    acceleration-exponent = <U_MOUSE_MOVE_EXPONENT>;
+    time-to-max-speed-ms = <U_MOUSE_MOVE_TIME>;
+};
+
+#define MOU_D 	&mmv 	MOVE_DOWN
+
 / {
 	behaviors {
 
-		mmv: behavior_mouse_move {
+		mmve: behavior_mouse_move {
 			compatible = "zmk,behavior-mouse-move";
 			label = "MOUSE_MOVE";
 			#binding-cells = <1>;
