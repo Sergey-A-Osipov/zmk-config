@@ -15,38 +15,8 @@
 #define MOU     8
 #define MED     9
 
-#define U_MOUSE_SCROLL_EXPONENT 1
-#define U_MOUSE_SCROLL_TIME 5000
-#define U_MOUSE_SCROLL_DELAY 0
-
-#define U_MOUSE_MOVE_MAX 3000
-#define U_MOUSE_MOVE_DELAY 0
-#define U_MOUSE_MOVE_EXPONENT 1
-#define U_MOUSE_MOVE_TIME 1500
-#define MOVE_UP 		MOVE_VERT(-U_MOUSE_MOVE_MAX)
-#define MOVE_DOWN 		MOVE_VERT(U_MOUSE_MOVE_MAX)
-#define MOVE_LEFT 		MOVE_HOR(-U_MOUSE_MOVE_MAX)
-#define MOVE_RIGHT 		MOVE_HOR(U_MOUSE_MOVE_MAX)
-
-&mmv {
-    delay-ms = <U_MOUSE_MOVE_DELAY>;
-    acceleration-exponent = <U_MOUSE_MOVE_EXPONENT>;
-    time-to-max-speed-ms = <U_MOUSE_MOVE_TIME>;
-};
-
-#define MOU_D 	&mmv 	MOVE_DOWN
-
 / {
 	behaviors {
-
-		mmve: behavior_mouse_move {
-			compatible = "zmk,behavior-mouse-move";
-			label = "MOUSE_MOVE";
-			#binding-cells = <1>;
-			delay-ms = <0>;
-			time-to-max-speed-ms = <1500>;
-			acceleration-exponent = <1>;
-		};
 
 		tdyo: tap_dance_yo {
 			compatible = "zmk,behavior-tap-dance";
@@ -217,8 +187,8 @@
                 navigation_layer {
                         bindings = <
 //╭───────┬──────────┬───────────┬──────────┬──────────┬────────╮   ╭────────────────┬──────────────┬──────────────┬──────────────┬───────────────┬───────╮
-//│       │          │           │          │          │        │   │ Redo           │ Paste        │ Copy         │ Cut          │ Undo          │       │
-    &none   &none      &none       &none      &none      &none        &none            &none          &none          &none          &none           &none
+//│       │          │           │          │          │        │   │ Undo           │ Paste        │ Copy         │ Cut          │ Redo          │       │
+    &none   &none      &none       &none      &none      &none        &kp K_UNDO       &kp K_PASTE    &kp K_COPY     &kp K_CUT      &kp K_AGAIN     &none
 //├───────┼──────────┼───────────┼──────────┼──────────┼────────┤   ├────────────────┼──────────────┼──────────────┼──────────────┼───────────────┼───────┤
 //│       │ CTRL     │ SHIFT     │ ALT      │ GUI      │        │   │ Pause          │ Left         │ Down         │ Up           │ Right         │       │
     &none   &kp LCTRL  &kp LSHFT   &kp LALT   &kp LGUI   &none        &kp PAUSE_BREAK  &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT       &none
@@ -234,11 +204,11 @@
                 mouse_layer {
                         bindings = <
 //╭───────┬──────────┬───────────┬──────────┬──────────┬────────╮   ╭────────────────┬──────────────┬──────────────┬──────────────┬───────────────┬───────╮
-//│       │          │           │          │          │        │   │ Redo           │ Paste        │ Copy         │ Cut          │ Undo          │       │
-    &none   &none      &none       &none      &none      &none        &none            &none          &none          &none          &none           &none
+//│       │          │           │          │          │        │   │ Undo           │ Paste        │ Copy         │ Cut          │ Redo          │       │
+    &none   &none      &none       &none      &none      &none        &kp LC(Z)        &kp LC(V)      &kp LC(C)      &kp LC(X)      &kp LC(Y)       &none
 //├───────┼──────────┼───────────┼──────────┼──────────┼────────┤   ├────────────────┼──────────────┼──────────────┼──────────────┼───────────────┼───────┤
 //│       │ CTRL     │ SHIFT     │ ALT      │ GUI      │        │   │ ScrLock        │ MS Left      │ MS Down      │ MS Up        │ MS Right      │       │
-    &none   &kp LCTRL  &kp LSHFT   &kp LALT   &kp LGUI   &none        &kp SLCK         &none          &mmv MOVE_DOWN &none          &none           &none
+    &none   &kp LCTRL  &kp LSHFT   &kp LALT   &kp LGUI   &none        &kp SLCK         &none          &none          &none          &none           &none
 //├───────┼──────────┼───────────┼──────────┼──────────┼────────┤   ├────────────────┼──────────────┼──────────────┼──────────────┼───────────────┼───────┤
 //│       │          │           │          │          │        │   │ Insert         │ SC Left      │ SC Down      │ SC Up        │ SC Right      │       │
     &none   &none      &none       &none      &none      &none        &kp INS          &none          &none          &none          &none           &none
