@@ -15,30 +15,22 @@
 #define MOU     8
 #define MED     9
 
-#define U_MOUSE_MOVE_EXPONENT 1
-#define U_MOUSE_MOVE_TIME 1500
-#define U_MOUSE_MOVE_DELAY 0
 #define U_MOUSE_SCROLL_EXPONENT 1
 #define U_MOUSE_SCROLL_TIME 5000
 #define U_MOUSE_SCROLL_DELAY 0
 
-#define U_MS_D &mmv MOVE_DOWN
-#define U_MS_L &mmv MOVE_LEFT
-#define U_MS_R &mmv MOVE_RIGHT
-#define U_MS_U &mmv MOVE_UP
-#define U_WH_D &msc SCRL_DOWN
-#define U_WH_L &msc SCRL_LEFT
-#define U_WH_R &msc SCRL_RIGHT
-#define U_WH_U &msc SCRL_UP
-
-&mmv {
-  acceleration-exponent = <U_MOUSE_MOVE_EXPONENT>;
-  time-to-max-speed-ms = <U_MOUSE_MOVE_TIME>;
-  delay-ms = <U_MOUSE_MOVE_DELAY>;
-};
-
 / {
 	behaviors {
+
+		mmv: behavior_mouse_move {
+			compatible = "zmk,behavior-mouse-move";
+			label = "MOUSE_MOVE";
+			#binding-cells = <1>;
+			delay-ms = <0>;
+			time-to-max-speed-ms = <1500>;
+			acceleration-exponent = <1>;
+		};
+
 		tdyo: tap_dance_yo {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAP_DANCE_YO";
