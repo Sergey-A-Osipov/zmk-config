@@ -187,8 +187,8 @@
                 navigation_layer {
                         bindings = <
 //╭───────┬──────────┬───────────┬──────────┬──────────┬────────╮   ╭────────────────┬──────────────┬──────────────┬──────────────┬───────────────┬───────╮
-//│       │          │           │          │          │        │   │ Undo           │ Paste        │ Copy         │ Cut          │ Redo          │       │
-    &none   &none      &none       &none      &none      &none        &kp K_UNDO       &kp K_PASTE    &kp K_COPY     &kp K_CUT      &kp K_AGAIN     &none
+//│       │          │           │          │          │        │   │ Undo           │ Cut          │ Copy         │ Paste        │ Redo          │       │
+    &none   &none      &none       &none      &none      &none        &kp LC(Z)        &kp LC(X)      &kp LC(C)      &kp LC(V)      &kp LC(Y)       &none
 //├───────┼──────────┼───────────┼──────────┼──────────┼────────┤   ├────────────────┼──────────────┼──────────────┼──────────────┼───────────────┼───────┤
 //│       │ CTRL     │ SHIFT     │ ALT      │ GUI      │        │   │ Pause          │ Left         │ Down         │ Up           │ Right         │       │
     &none   &kp LCTRL  &kp LSHFT   &kp LALT   &kp LGUI   &none        &kp PAUSE_BREAK  &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT       &none
@@ -204,8 +204,8 @@
                 mouse_layer {
                         bindings = <
 //╭───────┬──────────┬───────────┬──────────┬──────────┬────────╮   ╭────────────────┬──────────────┬──────────────┬──────────────┬───────────────┬───────╮
-//│       │          │           │          │          │        │   │ Undo           │ Paste        │ Copy         │ Cut          │ Redo          │       │
-    &none   &none      &none       &none      &none      &none        &kp LC(Z)        &kp LC(V)      &kp LC(C)      &kp LC(X)      &kp LC(Y)       &none
+//│       │          │           │          │          │        │   │ Undo           │ Cut          │ Copy         │ Paste        │ Redo          │       │
+    &none   &none      &none       &none      &none      &none        &kp LC(Z)        &kp LC(X)      &kp LC(C)      &kp LC(V)      &kp LC(Y)       &none
 //├───────┼──────────┼───────────┼──────────┼──────────┼────────┤   ├────────────────┼──────────────┼──────────────┼──────────────┼───────────────┼───────┤
 //│       │ CTRL     │ SHIFT     │ ALT      │ GUI      │        │   │ ScrLock        │ MS Left      │ MS Down      │ MS Up        │ MS Right      │       │
     &none   &kp LCTRL  &kp LSHFT   &kp LALT   &kp LGUI   &none        &kp SLCK         &none          &none          &none          &none           &none
