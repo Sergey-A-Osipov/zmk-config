@@ -89,7 +89,7 @@
     &none   &lt SET Z       &kp X           &kp C           &kp V           &kp B               &kp N           &tdtz           &kp COMMA       &kp DOT         &kp FSLH        &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ BKSP(MO NUM)  │ ENTER(MO SYM) │ DEL(MO FUN)   │
-                                            &lt MED ESC     &lt MOU TAB     &lt NAV SPACE       &lt NUM BSPC    &lt SYM RET     &lt FUN DEL
+                                            &lt W_MED ESC   &lt W_MOU TAB   &lt W_NAV SPACE     &lt W_NUM BSPC  &lt W_SYM RET   &lt W_FUN DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
@@ -208,7 +208,7 @@
     &none   &lt SET Z       &kp X           &kp C           &kp V           &kp B               &kp N           &tdtz           &kp COMMA       &kp DOT         &kp FSLH        &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ BKSP(MO NUM)  │ ENTER(MO SYM) │ DEL(MO FUN)   │
-                                            &lt MED ESC     &lt MOU TAB     &lt NAV SPACE       &lt NUM BSPC    &lt SYM RET     &lt FUN DEL
+                                            &lt M_MED ESC   &lt M_MOU TAB   &lt M_NAV SPACE     &lt M_NUM BSPC  &lt M_SYM RET   &lt M_FUN DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
