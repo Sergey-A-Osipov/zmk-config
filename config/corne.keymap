@@ -28,7 +28,6 @@
 
 / {
 	behaviors {
-
 		ht: hold_tap_kp_kp {
 			label = "hold_tap";
 			compatible = "zmk,behavior-hold-tap";
@@ -38,6 +37,20 @@
 			quick-tap-ms = <150>;
 			global-quick-tap;
 			bindings = <&kp>, <&kp>;
+		};
+	};
+
+	macros {
+		macro_dot_key: macro_dot_key {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <40>;
+			tap-ms = <40>;
+			bindings
+				= <&kp KP_NUM>
+				, <&kp KP_DOT>
+				, <&kp CLEAR2>
+				;
 		};
 	};
 
@@ -65,7 +78,7 @@
                         bindings = <
 //╭───────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────╮
 //│       │ +             │ 7             │ 8             │ 9             │ *             │   │               │               │               │               │               │       │
-    &none   &kp PLUS        &kp N7          &kp N8          &kp N9          &kp STAR            &none           &kp KP_NUM      &kp KP_DOT      &kp CLEAR2      &none           &none
+    &none   &kp PLUS        &kp N7          &kp N8          &kp N9          &kp STAR            &none           &kp KP_NUM      &kp KP_DOT      &kp CLEAR2      &macro_dot_key  &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │ -             │ 4             │ 5             │ 6             │ /             │   │               │ ALT           │ GUI           │ SHIFT         │ CTRL          │       │
     &none   &kp KP_MINUS    &kp N4          &kp N5          &kp N6          &kp KP_DIVIDE       &none           &kp RALT        &kp RGUI        &kp RSHFT       &kp RCTRL       &none
