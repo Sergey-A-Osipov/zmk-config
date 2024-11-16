@@ -131,11 +131,11 @@
 //│       │               │               │               │               │               │   │ Undo          │ Cut           │ Copy          │ Paste         │ Redo          │       │
     &none   &none           &none           &none           &none           &none               &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(Y)       &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │ CTRL          │ SHIFT         │ GUI           │ ALT           │               │   │ Pause         │ Left          │ Down          │ Up            │ Right         │       │
-    &none   &kp LCTRL       &kp LSHFT       &kp LGUI        &kp LALT        &none               &kp PAUSE_BREAK &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none
+//│       │ CTRL          │ SHIFT         │ GUI           │ ALT           │               │   │ Pause         │ Left          │ Up            │ Down          │ Right         │       │
+    &none   &kp LCTRL       &kp LSHFT       &kp LGUI        &kp LALT        &none               &kp PAUSE_BREAK &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT       &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │               │               │               │               │               │   │ PrtScr        │ HOME          │ PGDN          │ PGUP          │ END           │       │
-    &none   &none           &none           &none           &none           &none               &kp PSCRN       &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &none
+//│       │               │               │               │               │               │   │ PrtScr        │ HOME          │ PGUP          │ PGDN          │ END           │       │
+    &none   &none           &none           &none           &none           &none               &kp PSCRN       &kp HOME        &kp PG_UP       &kp PG_DN       &kp END         &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │               │               │               │   │ ENTER         │ BKSP          │ DEL           │
                                             &none           &none           &none               &kp RET         &kp BSPC        &kp DEL
@@ -250,11 +250,11 @@
 //│       │               │               │               │               │               │   │ Undo          │ Cut           │ Copy          │ Paste         │ Redo          │       │
     &none   &none           &none           &none           &none           &none               &kp LG(Z)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp LS(LG(Z))   &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │ GUI           │ SHIFT         │ CTRL          │ ALT           │               │   │ Pause         │ Left          │ Down          │ Up            │ Right         │       │
-    &none   &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &none               &kp PAUSE_BREAK &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none
+//│       │ GUI           │ SHIFT         │ CTRL          │ ALT           │               │   │ Pause         │ Left          │ Up            │ Down          │ Right         │       │
+    &none   &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &none               &kp PAUSE_BREAK &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT       &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │               │               │               │               │               │   │ PrtScr        │ HOME          │ PGDN          │ PGUP          │ END           │       │
-    &none   &none           &none           &none           &none           &none               &kp PSCRN       &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &none
+//│       │               │               │               │               │               │   │ PrtScr        │ HOME          │ PGUP          │ PGDN          │ END           │       │
+    &none   &none           &none           &none           &none           &none               &kp PSCRN       &kp HOME        &kp PG_UP       &kp PG_DN       &kp END         &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │               │               │               │   │ ENTER         │ BKSP          │ DEL           │
                                             &none           &none           &none               &kp RET         &kp BSPC        &kp DEL
