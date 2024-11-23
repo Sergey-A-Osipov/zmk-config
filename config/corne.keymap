@@ -38,6 +38,16 @@
 			global-quick-tap;
 			bindings = <&kp>, <&kp>;
 		};
+ 		hthp: hold_tap_hp_kp_kp {
+			label = "hold_tap_hp";
+			compatible = "zmk,behavior-hold-tap";
+			#binding-cells = <2>;
+			flavor = "hold-preferred";
+			tapping-term-ms = <220>;
+			quick-tap-ms = <150>;
+			global-quick-tap;
+			bindings = <&kp>, <&kp>;
+		};
 	};
 
 	macros {
@@ -64,7 +74,7 @@
     &none   &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Y           &kp U           &kp I           &kp O           &kp P           &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │ A(CTRL)       │ S(SHIFT)      │ D(GUI)        │ F(ALT)        │ G             │   │ H             │ J(ALT)        │ K(GUI)        │ L(SHIFT)      │ ;(CTRL)       │       │
-    &none   &ht LCTRL A     &ht LSHFT S     &ht LGUI D      &ht LALT F      &kp G               &kp H           &ht LALT J      &ht RGUI K      &ht RSHFT L     &ht RCTRL SEMI  &none
+    &none   &ht LCTRL A     &hthp LSHFT S   &ht LGUI D      &ht LALT F      &kp G               &kp H           &ht LALT J      &ht RGUI K      &hthp RSHFT L   &ht RCTRL SEMI  &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │ Z(MO SET)     │ X             │ C             │ V             │ B             │   │ N             │ M             │ ,             │ .             │ /             │       │
     &none   &lt SET Z       &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none
@@ -183,7 +193,7 @@
     &none   &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Y           &kp U           &kp I           &kp O           &kp P           &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │ A(GUI)        │ S(SHIFT)      │ D(CTRL)       │ F(ALT)        │ G             │   │ H             │ J(ALT)        │ K(CTRL)       │ L(SHIFT)      │ ;(GUI)        │       │
-    &none   &ht LGUI A      &ht LSHFT S     &ht LCTRL D     &ht LALT F      &kp G               &kp H           &ht RALT J      &ht RCTRL K     &ht RSHFT L     &ht RGUI SEMI   &none
+    &none   &ht LGUI A      &hthp LSHFT S   &ht LCTRL D     &ht LALT F      &kp G               &kp H           &ht RALT J      &ht RCTRL K     &hthp RSHFT L   &ht RGUI SEMI   &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │ Z(MO SET)     │ X             │ C             │ V             │ B             │   │ N             │ M             │ ,             │ .             │ /             │       │
     &none   &lt SET Z       &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none
