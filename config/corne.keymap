@@ -35,7 +35,8 @@
 / {
 	behaviors {
 		ht: hold_tap_kp_kp {
-			label = "hold_tap";
+			// label = "hold_tap";
+			label = "balanced";
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
 			flavor = "hold-preferred";
