@@ -91,7 +91,7 @@
     &none   &kp N0          &kp N4          &kp N5          &kp N6          &kp EQUAL           &none           &kp LALT        &kp RGUI        &kp RSHFT       &kp RCTRL       &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │ -             │ 1             │ 2             │ 3             │ /             │   │               │ Ё             │ Х             │ Ъ             │ Э             │       │
-    &none   &kp KP_MINUS    &kp N1          &kp N2          &kp N3          &kp KP_DIVIDE       &none           &kp GRAVE       &kp LBKT        &kp RBKT        &kp SQT         &none
+    &none   &kp MINUS       &kp N1          &kp N2          &kp N3          &kp KP_DIVIDE       &none           &kp GRAVE       &kp LBKT        &kp RBKT        &kp SQT         &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │ %             │ .             │ SPACE         │   │               │               │               │
                                             &kp PRCNT       &macro_dot_key  &kp SPACE           &none           &none           &none
@@ -210,7 +210,7 @@
     &none   &kp N0          &kp N4          &kp N5          &kp N6          &kp EQUAL           &none           &kp RALT        &kp RCTRL       &kp RSHFT       &kp RGUI        &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │ -             │ 1             │ 2             │ 3             │ /             │   │               │ Ё             │ Х             │ Ъ             │ Э             │       │
-    &none   &kp KP_MINUS    &kp N1          &kp N2          &kp N3          &kp KP_DIVIDE       &none           &kp GRAVE       &kp LBKT        &kp RBKT        &kp SQT         &none
+    &none   &kp MINUS       &kp N1          &kp N2          &kp N3          &kp KP_DIVIDE       &none           &kp GRAVE       &kp LBKT        &kp RBKT        &kp SQT         &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │ %             │ .             │ SPACE         │   │               │               │               │
                                             &kp PRCNT       &kp KP_DOT      &kp SPACE           &none           &none           &none
