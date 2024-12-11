@@ -90,8 +90,8 @@
 //│       │ 0             │ 4             │ 5             │ 6             │ =             │   │               │ ALT           │ GUI           │ SHIFT         │ CTRL          │       │
     &none   &kp N0          &kp N4          &kp N5          &kp N6          &kp EQUAL           &none           &kp LALT        &kp RGUI        &kp RSHFT       &kp RCTRL       &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │ -             │ 1             │ 2             │ 3             │ /             │   │               │ Ё             │ Х             │ Ъ             │ Э             │       │
-    &none   &kp MINUS       &kp N1          &kp N2          &kp N3          &kp KP_DIVIDE       &none           &kp GRAVE       &kp LBKT        &kp RBKT        &kp SQT         &none
+//│       │ -             │ 1             │ 2             │ 3             │ /             │   │               │ Э             │ Х             │ Ъ             │ Ё             │       │
+    &none   &kp MINUS       &kp N1          &kp N2          &kp N3          &kp KP_DIVIDE       &none           &kp SQT         &kp LBKT        &kp RBKT        &kp GRAVE       &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │ %             │ .             │ SPACE         │   │               │               │               │
                                             &kp PRCNT       &macro_dot_key  &kp SPACE           &none           &none           &none
@@ -209,8 +209,8 @@
 //│       │ 0             │ 4             │ 5             │ 6             │ =             │   │               │ ALT           │ CTRL          │ SHIFT         │ GUI           │       │
     &none   &kp N0          &kp N4          &kp N5          &kp N6          &kp EQUAL           &none           &kp RALT        &kp RCTRL       &kp RSHFT       &kp RGUI        &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │ -             │ 1             │ 2             │ 3             │ /             │   │               │ Ё             │ Х             │ Ъ             │ Э             │       │
-    &none   &kp MINUS       &kp N1          &kp N2          &kp N3          &kp KP_DIVIDE       &none           &kp GRAVE       &kp LBKT        &kp RBKT        &kp SQT         &none
+//│       │ -             │ 1             │ 2             │ 3             │ /             │   │               │ Э             │ Х             │ Ъ             │ Ё             │       │
+    &none   &kp MINUS       &kp N1          &kp N2          &kp N3          &kp KP_DIVIDE       &none           &kp SQT         &kp LBKT        &kp RBKT        &kp GRAVE       &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │ %             │ .             │ SPACE         │   │               │               │               │
                                             &kp PRCNT       &kp KP_DOT      &kp SPACE           &none           &none           &none
