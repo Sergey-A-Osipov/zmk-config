@@ -131,7 +131,7 @@
                         bindings = <
 //╭───────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────╮
 //│       │ F12           │ F7            │ F8            │ F9            │ `             │   │               │               │               │               │               │       │
-    &none   &kp F12         &kp F7          &kp F8          &kp F9          &kp GRAVE            &none           &none           &none           &none           &none           &none
+    &none   &kp F12         &kp F7          &kp F8          &kp F9          &kp GRAVE           &none           &none           &none           &none           &none           &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │ F11           │ F4            │ F5            │ F6            │ ~             │   │               │ ALT           │ GUI           │ SHIFT         │ CTRL          │       │
     &none   &kp F11         &kp F4          &kp F5          &kp F6          &kp TILDE           &none           &kp LALT        &kp RGUI        &kp RSHFT       &kp RCTRL       &none
@@ -207,8 +207,8 @@
 //│       │ Z(MO SET)     │ X             │ C             │ V             │ B             │   │ N             │ M             │ ,             │ .             │ /             │       │
     &none   &lt SET Z       &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
-//                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ ENTER(MO NUM) │ BKSP(MO SYM)  │ DEL(MO FUN)   │
-                                            &lt M_MED ESC   &lt M_MOU TAB   &lt M_NAV SPACE     &lt M_NUM RET   &lt M_SYM BSPC  &lt M_FUN DEL
+//                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ ENTER(MO NUM) │ BKSPDL(MO SYM)│ DEL(MO FUN)   │
+                                            &lt M_MED ESC   &lt M_MOU TAB   &lt M_NAV SPACE     &lt M_NUM RET   &bsdlsm         &lt M_FUN DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
@@ -266,17 +266,17 @@
                 navigation_mac_layer {
                         bindings = <
 //╭───────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────╮
-//│       │               │               │               │               │               │   │ Undo          │ Cut           │ Copy          │ Paste         │ Redo          │       │
-    &none   &none           &none           &none           &none           &none               &kp LG(Z)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp LS(LG(Z))   &none
+//│       │               │               │               │               │               │   │ PrtScr        │ Undo          │ Up            │ Redo          │ PGUP          │       │
+    &none   &none           &none           &none           &none           &none               &kp PSCRN       &kp LG(Z)       &kp UP          &kp LS(LG(Z))   &kp PG_UP       &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │ GUI           │ SHIFT         │ CTRL          │ ALT           │               │   │ Pause         │ Left          │ Up            │ Down          │ Right         │       │
-    &none   &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &none               &kp PAUSE_BREAK &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT       &none
+//│       │ GUI           │ SHIFT         │ CTRL          │ ALT           │               │   │ HOME          │ Left          │ Down          │ Right         │ END           │       │
+    &none   &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &none               &kp HOME        &kp LEFT        &kp DOWN        &kp RIGHT       &kp END         &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │               │               │               │               │               │   │ PrtScr        │ HOME          │ PGUP          │ PGDN          │ END           │       │
-    &none   &none           &none           &none           &none           &none               &kp PSCRN       &kp HOME        &kp PG_UP       &kp PG_DN       &kp END         &none
+//│       │               │               │               │               │               │   │ Pause         │ Cut           │ Copy          │ Paste         │ PGDN          │       │
+    &none   &none           &none           &none           &none           &none               &kp PAUSE_BREAK &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp PG_DN       &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
-//                                        │               │               │               │   │ ENTER         │ BKSP          │ DEL           │
-                                            &none           &none           &none               &kp RET         &kp BSPC        &kp DEL
+//                                        │               │               │               │   │ ENTER         │ BKSP_DEL      │ DEL           │
+                                            &none           &none           &none               &kp RET         &bsdl           &kp DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
