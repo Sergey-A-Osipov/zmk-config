@@ -27,8 +27,8 @@
 
 &lt {
 	flavor = "hold-preferred";
-	tapping-term-ms = <400>;
-	quick-tap-ms = <400>;
+	tapping-term-ms = <300>;
+	quick-tap-ms = <300>;
 	// global-quick-tap;
 };
 
@@ -40,11 +40,17 @@
 			#binding-cells = <2>;
 			flavor = "balanced";
 			// flavor = "hold-preferred";
-			tapping-term-ms = <400>;
-			quick-tap-ms = <400>;
+			tapping-term-ms = <300>;
+			quick-tap-ms = <300>;
 			// global-quick-tap;
 			bindings = <&kp>, <&kp>;
 		};
+		bckspdel: bcksp_del {
+            		compatible = "zmk,behavior-mod-morph";
+            		#binding-cells = <0>;
+            		bindings = <&kp BSPC>, <&kp DEL>;
+            		mods = <(MOD_LSFT|MOD_RSFT)>;
+        	};
 	};
 
 	macros {
@@ -135,17 +141,17 @@
                 navigation_win_layer {
                         bindings = <
 //╭───────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────╮
-//│       │               │               │               │               │               │   │ Undo          │ Cut           │ Copy          │ Paste         │ Redo          │       │
-    &none   &none           &none           &none           &none           &none               &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(Y)       &none
+//│       │               │               │               │               │               │   │ PrtScr        │ Undo          │ Up            │ Redo          │ PGUP          │       │
+    &none   &none           &none           &none           &none           &none               &kp PSCRN       &kp LC(Z)       &kp UP          &kp LC(Y)       &kp PG_UP       &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │ CTRL          │ SHIFT         │ GUI           │ ALT           │               │   │ Pause         │ Left          │ Up            │ Down          │ Right         │       │
-    &none   &kp LCTRL       &kp LSHFT       &kp LGUI        &kp LALT        &none               &kp PAUSE_BREAK &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT       &none
+//│       │ CTRL          │ SHIFT         │ GUI           │ ALT           │               │   │ HOME          │ Left          │ Down          │ Right         │ END           │       │
+    &none   &kp LCTRL       &kp LSHFT       &kp LGUI        &kp LALT        &none               &kp HOME        &kp LEFT        &kp DOWN        &kp RIGHT       &kp END         &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │               │               │               │               │               │   │ PrtScr        │ HOME          │ PGUP          │ PGDN          │ END           │       │
-    &none   &none           &none           &none           &none           &none               &kp PSCRN       &kp HOME        &kp PG_UP       &kp PG_DN       &kp END         &none
+//│       │               │               │               │               │               │   │ Pause         │ Cut           │ Copy          │ Paste         │ PGDN          │       │
+    &none   &none           &none           &none           &none           &none               &kp PAUSE_BREAK &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp PG_DN       &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
-//                                        │               │               │               │   │ ENTER         │ BKSP          │ DEL           │
-                                            &none           &none           &none               &kp RET         &kp BSPC        &kp DEL
+//                                        │               │               │               │   │ ENTER         │ BKSP_DEL      │ DEL           │
+                                            &none           &none           &none               &kp RET         &bckspdel       &kp DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
