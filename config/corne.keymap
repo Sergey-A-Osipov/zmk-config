@@ -45,7 +45,7 @@
 			// global-quick-tap;
 			bindings = <&kp>, <&kp>;
 		};
-		bckspdel: bcksp_del {
+		bsdl: bcksp_del {
             		compatible = "zmk,behavior-mod-morph";
             		#binding-cells = <0>;
             		bindings = <&kp BSPC>, <&kp DEL>;
@@ -82,8 +82,8 @@
 //│       │ Z(MO SET)     │ X             │ C             │ V             │ B             │   │ N             │ M             │ ,             │ .             │ /             │       │
     &none   &lt SET Z       &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
-//                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ ENTER(MO NUM) │ BKSP(MO SYM)  │ DEL(MO FUN)   │
-                                            &lt W_MED ESC   &lt W_MOU TAB   &lt W_NAV SPACE     &lt W_NUM RET   &lt W_SYM BSPC  &lt W_FUN DEL
+//                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ ENTER(MO NUM) │ BKSPDL(MO SYM)│ DEL(MO FUN)   │
+                                            &lt W_MED ESC   &lt W_MOU TAB   &lt W_NAV SPACE     &lt W_NUM RET   &lt W_SYM &bsdl &lt W_FUN DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
@@ -151,7 +151,7 @@
     &none   &none           &none           &none           &none           &none               &kp PAUSE_BREAK &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp PG_DN       &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │               │               │               │   │ ENTER         │ BKSP_DEL      │ DEL           │
-                                            &none           &none           &none               &kp RET         &bckspdel       &kp DEL
+                                            &none           &none           &none               &kp RET         &bsdl           &kp DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
