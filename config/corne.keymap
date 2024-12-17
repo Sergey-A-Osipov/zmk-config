@@ -51,6 +51,12 @@
             		bindings = <&kp BSPC>, <&kp DEL>;
             		mods = <(MOD_LSFT|MOD_RSFT)>;
         	};
+		bsdlsm: bcksp_del_sym {
+            		compatible = "zmk,behavior-mod-morph";
+            		#binding-cells = <0>;
+            		bindings = <&lt W_SYM BSPC>, <&lt W_SYM DEL>;
+            		mods = <(MOD_LSFT|MOD_RSFT)>;
+        	};
 	};
 
 	macros {
@@ -83,7 +89,7 @@
     &none   &lt SET Z       &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ ENTER(MO NUM) │ BKSPDL(MO SYM)│ DEL(MO FUN)   │
-                                            &lt W_MED ESC   &lt W_MOU TAB   &lt W_NAV SPACE     &lt W_NUM RET   &lt W_SYM &bsdl &lt W_FUN DEL
+                                            &lt W_MED ESC   &lt W_MOU TAB   &lt W_NAV SPACE     &lt W_NUM RET   &bsdlsm         &lt W_FUN DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
