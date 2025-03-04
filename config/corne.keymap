@@ -164,11 +164,11 @@
                 mouse_win_layer {
                         bindings = <
 //╭───────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────╮
-//│       │               │               │               │               │               │   │ Undo          │ Cut           │ Copy          │ Paste         │ Redo          │       │
-    &none   &none           &none           &none           &none           &none               &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(Y)       &none
+//│       │               │               │               │               │               │   │ NumLock       │               │ MS Up         │               │               │       │
+    &none   &none           &none           &none           &none           &none               &kp KP_NUM      &none           &mmv MOVE_UP    &none           &none           &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │ CTRL          │ SHIFT         │ GUI           │ ALT           │               │   │ ScrLock       │ MS Left       │ MS Up         │ MS Down       │ MS Right      │       │
-    &none   &kp LCTRL       &kp LSHFT       &kp LGUI        &kp LALT        &none               &kp SLCK        &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none
+//│       │ CTRL          │ SHIFT         │ GUI           │ ALT           │               │   │ ScrLock       │ MS Left       │ MS Down       │ MS Right      │               │       │
+    &none   &kp LCTRL       &kp LSHFT       &kp LGUI        &kp LALT        &none               &kp SLCK        &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT  &none           &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │               │               │               │               │               │   │ Insert        │ SC Left       │ SC Up         │ SC Down       │ SC Right      │       │
     &none   &none           &none           &none           &none           &none               &kp INS         &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT &none
@@ -283,11 +283,11 @@
                 mouse_mac_layer {
                         bindings = <
 //╭───────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────╮
-//│       │               │               │               │               │               │   │ Undo          │ Cut           │ Copy          │ Paste         │ Redo          │       │
-    &none   &none           &none           &none           &none           &none               &kp LG(Z)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp LS(LG(Z))   &none
+//│       │               │               │               │               │               │   │ NumLock       │               │ MS Up         │               │               │       │
+    &none   &none           &none           &none           &none           &none               &kp KP_NUM      &none           &mmv MOVE_UP    &none           &none           &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │ GUI           │ SHIFT         │ CTRL          │ ALT           │               │   │ ScrLock       │ MS Left       │ MS Up         │ MS Down       │ MS Right      │       │
-    &none   &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &none               &kp SLCK        &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none
+//│       │ GUI           │ SHIFT         │ CTRL          │ ALT           │               │   │ ScrLock       │ MS Left       │ MS Down       │ MS Right      │               │       │
+    &none   &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &none               &kp SLCK        &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT  &none           &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │               │               │               │               │               │   │ Insert        │ SC Left       │ SC Up         │ SC Down       │ SC Right      │       │
     &none   &none           &none           &none           &none           &none               &kp INS         &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT &none
@@ -357,8 +357,8 @@
 //│       │ OUT_TOG       │               │ TO MAC        │ TO WIN        │ TO CS1        │   │               │               │               │               │               │       │
     &none   &out OUT_TOG    &none           &to M_DEF       &to W_DEF       &to CS1             &none           &none           &none           &none           &none           &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │               │               │               │               │ NumLock       │   │               │               │               │               │               │       │
-    &none   &none           &none           &none           &none           &kp KP_NUM          &none           &none           &none           &none           &none           &none
+//│       │               │               │               │               │               │   │               │               │               │               │               │       │
+    &none   &none           &none           &none           &none           &none               &none           &none           &none           &none           &none           &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │               │               │               │   │               │               │               │
                                             &none           &none           &none               &none           &none           &none
