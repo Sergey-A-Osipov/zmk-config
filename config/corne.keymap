@@ -51,13 +51,13 @@
             		bindings = <&kp BSPC>, <&kp DEL>;
             		mods = <(MOD_LSFT|MOD_RSFT)>;
         	};
-		bsdlsm_w: bcksp_del_sym {
+		bsdlsm_w: bcksp_del_sym_w {
             		compatible = "zmk,behavior-mod-morph";
             		#binding-cells = <0>;
             		bindings = <&lt W_SYM BSPC>, <&lt W_SYM DEL>;
             		mods = <(MOD_LSFT|MOD_RSFT)>;
         	};
-		bsdlsm_m: bcksp_del_sym {
+		bsdlsm_m: bcksp_del_sym_m {
             		compatible = "zmk,behavior-mod-morph";
             		#binding-cells = <0>;
             		bindings = <&lt M_SYM BSPC>, <&lt M_SYM DEL>;
