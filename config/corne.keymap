@@ -272,7 +272,7 @@
                         bindings = <
 //╭───────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────╮
 //│       │               │               │               │               │               │   │ PrtScr        │ Undo          │ Up            │ Redo          │ PGUP          │       │
-    &none   &none           &none           &none           &none           &none             &kp LG(LS(LC(3))) &kp LG(Z)       &kp UP          &kp LS(LG(Z))   &kp PG_UP       &none
+    &none   &none           &none           &none           &none           &none            &kp LG(LS(LC(N3))) &kp LG(Z)       &kp UP          &kp LS(LG(Z))   &kp PG_UP       &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
 //│       │ GUI           │ SHIFT         │ CTRL          │ ALT           │               │   │ HOME          │ Left          │ Down          │ Right         │ END           │       │
     &none   &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &none               &kp HOME        &kp LEFT        &kp DOWN        &kp RIGHT       &kp END         &none
