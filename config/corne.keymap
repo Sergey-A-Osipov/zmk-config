@@ -93,8 +93,8 @@
 //│       │ Z(MO SET)     │ X             │ C             │ V             │ B             │   │ N             │ M             │ ,             │ .             │ /             │       │
     &none   &lt SET Z       &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
-//                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ BKSPDL(MO NUM)│ DEL(MO SYM)   │ ENTER(MO FUN) │
-                                            &lt W_MED ESC   &lt W_MOU TAB   &lt W_NAV SPACE     &bsdlnm_w       &lt W_SYM DEL   &lt W_FUN RET
+//                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ ENTER(MO FUN) │ BKSPDL(MO NUM)│ DEL(MO SYM)   │
+                                            &lt W_MED ESC   &lt W_MOU TAB   &lt W_NAV SPACE     &lt W_FUN RET   &bsdlnm_w       &lt W_SYM DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
@@ -161,8 +161,8 @@
 //│       │               │               │               │               │               │   │ Pause         │ Cut           │ Copy          │ Paste         │ PGDN          │       │
     &none   &none           &none           &none           &none           &none               &kp PAUSE_BREAK &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp PG_DN       &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
-//                                        │               │               │               │   │ BKSP_DEL      │ DEL           │ ENTER         │
-                                            &none           &none           &none               &bsdl           &kp DEL         &kp RET
+//                                        │               │               │               │   │ ENTER         │ BKSP_DEL      │ DEL           │
+                                            &none           &none           &none               &kp RET         &bsdl           &kp DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
@@ -212,8 +212,8 @@
 //│       │ Z(MO SET)     │ X             │ C             │ V             │ B             │   │ N             │ M             │ ,             │ .             │ /             │       │
     &none   &lt SET Z       &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
-//                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ BKSPDL(MO NUM)│ DEL(MO SYM)   │ ENTER(MO FUN) │
-                                            &lt M_MED ESC   &lt M_MOU TAB   &lt M_NAV SPACE     &bsdlnm_m       &lt M_SYM DEL   &lt M_FUN RET
+//                                        │ ESC(MO MED)   │ TAB(MO MOU)   │ SPACE(MO NAV) │   │ ENTER(MO FUN) │ BKSPDL(MO NUM)│ DEL(MO SYM)   │
+                                            &lt M_MED ESC   &lt M_MOU TAB   &lt M_NAV SPACE     &lt M_FUN RET   &bsdlnm_m       &lt M_SYM DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
@@ -280,8 +280,8 @@
 //│       │               │               │               │               │               │   │ Pause (F15)   │ Cut           │ Copy          │ Paste         │ PGDN          │       │
     &none   &none           &none           &none           &none           &none               &kp F15         &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp PG_DN       &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
-//                                        │               │               │               │   │ BKSP_DEL      │ DEL           │ ENTER         │
-                                            &none           &none           &none               &bsdl           &kp DEL         &kp RET
+//                                        │               │               │               │   │ ENTER         │ BKSP_DEL      │ DEL           │
+                                            &none           &none           &none               &kp RET         &bsdl           &kp DEL
 //                                        ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                         >;
                 };
