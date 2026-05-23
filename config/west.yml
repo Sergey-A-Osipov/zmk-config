@@ -2,14 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: newx-it
-      url-base: https://github.com/newx-it
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
-#      remote: newx-it
-#      revision: prevent-sleep-while-active-bt # это имя ветки из PR #3288
       import: app/west.yml
   self:
     path: config
