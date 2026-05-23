@@ -15,5 +15,7 @@
 include:
   - board: nice_nano//zmk
     shield: corne_left
+    patch_files: ["patches/sleep_prevention.patch"]
   - board: nice_nano//zmk
     shield: corne_right
+    patch_files: ["patches/sleep_prevention.patch"]
