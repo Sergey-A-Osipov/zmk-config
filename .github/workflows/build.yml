@@ -2,41 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    #uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    runs-on: ubuntu-latest
-    name: Build ZMK Firmware
-    steps:
-      - name: Checkout user config
-        uses: actions/checkout@v4
-
-      - name: Cache west modules
-        uses: actions/cache@v4
-        env:
-          cache-name: cache-zephyr-modules
-        with:
-          path: |
-            modules
-            tools
-            zephyr
-            bootloader
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('config/west.yml') }}
-
-      - name: Initialize west workspace
-        uses: zmkfirmware/zmk-actions-toolkit/setup-assistant@v2
-
-      # ---- ШАГ НАЛОЖЕНИЯ ВАШЕГО ПАТЧА ----
-      - name: Apply Sleep Prevention Patch
-        run: |
-          git apply --directory=zmk patches/sleep_prevention.patch
-      # ------------------------------------
-
-      - name: Build ZMK
-        uses: zmkfirmware/zmk-actions-toolkit/build@v2
-        with:
-          recipes_path: config/build.yaml
-
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: firmware
-          path: build/artifacts
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
