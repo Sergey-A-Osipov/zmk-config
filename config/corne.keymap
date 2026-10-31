@@ -348,8 +348,8 @@
 //│       │ SHIFT         │ A             │ S             │ D             │ F             │   │ G             │ H             │ J             │ K             │ L             │       │
     &none   &kp LSHFT       &kp A           &kp S           &kp D           &kp F               &kp G           &kp H           &kp J           &kp K           &kp L           &none
 //├───────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────┤
-//│       │ CTRL          │ Z             │ X             │ C             │ V             │   │ B             │ N             │ M             │ ,             │ .             │       │
-    &none   &kp LCTRL       &kp Z           &kp X           &kp C           &kp V               &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &none
+//│       │ GUI           │ Z             │ X             │ C             │ V             │   │ B             │ N             │ M             │ ,             │ .             │       │
+    &none   &kp LGUI        &kp Z           &kp X           &kp C           &kp V               &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &none
 //╰───────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────╯
 //                                        │ TAB           │ SPACE         │ MO GM2        │   │ ENTER         │ BKSP          │ DEL           │
                                             &kp TAB         &kp SPACE       &mo GM2             &kp RET         &kp BSPC        &kp DEL
