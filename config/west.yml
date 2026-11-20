@@ -2,14 +2,14 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: newx-it
-      url-base: https://github.com/newx-it
+    # - name: newx-it
+    #   url-base: https://github.com/newx-it
   projects:
     - name: zmk
-      remote: newx-it
-      revision: feat-ble-prevent-sleep-feat-usb-allow-sleep
-      # remote: zmkfirmware
-      # revision: main
+      # remote: newx-it
+      # revision: feat-ble-prevent-sleep-feat-usb-allow-sleep
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
