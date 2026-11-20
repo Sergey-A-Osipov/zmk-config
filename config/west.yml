@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: newx-it
+      url-base: https://github.com/newx-it
   projects:
     - name: zmk
       remote: zmkfirmware
